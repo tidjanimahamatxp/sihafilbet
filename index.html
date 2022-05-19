@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siha Fil Bet</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <marquee behavior="alternate">
+    <h1>Bienvenue a Siha Fil Bet</h1>
+    </marquee>  
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault(); onFormSubmit()">
+
+                    <div>
+                        <label for="code">Patient Code* <label class="validation-error hide"  id="codeValidationError" >This Field is required</label></label>
+                        <input required type="text" name="code" id="code">
+                    </div>
+                    <div>
+                        <label for="fullname">Full Name* <label class="validation-error hide"  id="fullNameValidationError" >This Field is required</label> </label>
+                        <input type="text" name="fullname" id="fullname">
+                    </div>
+                    <div>
+                        <label for="gender">Gender</label>
+                        <input type="text" name="gender" id="gender">
+                    </div>
+                    <div>
+                        <label for="code">Address</label>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div>
+                        <label for="Telephone">Telephone</label>
+                        <input type="text" name="telephone" id="telephone">
+                    </div>
+
+                    <div>
+                        <label for="profession">Profession</label>
+                        <input type="text" name="profession" id="profession">
+                    </div>
+                    <div>
+                        <input class="form-action-buttons submit" type="submit" value="Submit">
+                    </div>
+
+                </form>
+            </td>
+            <td>
+                <table class="list" id="emplist">
+                    <thead>
+                        <tr>
+                            <td class="thead">Student Code</td>
+                            <td class="thead">Full Name</td>
+                            <td class="thead">Gender</td>
+                            <td class="thead">Address</td>
+                            <td class="thead">Telephone</td>
+                            <td class="thead">Profession</td>
+                            <td class="thead">Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
